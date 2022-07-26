@@ -307,3 +307,335 @@ Property dari objek document meliputi :
 Method dari objek document meliputi : 
 
 ![alt text](objekdocument2.png)
+
+*C. Percabangan*
+
+Untuk membuat suatu halaman yang dinamis dan interaktif, perancang halaman Web 
+membutuhkan perintah-perintah yang dapat mengatur aliran dari informasi. 
+Berdasarkan hasil komputasi yang telah dilakukan, JavaScript akan membuat 
+keputusan jalur mana yang akan dieksekusi. 
+Pada dasarnya dalam JavaScript terdapat dua macam pernyataan percabangan yaitu 
+if..else dan switch.
+
+1.If else, Pernyataan ini digunakan untuk menguji sebuah kondisi dan kemudian mengeksekusi pernyataan tertentu bila kondisi tersebut terpenuhi, dan mengeksekusi pernyataan lain 
+bila kondisi tersebut tidak terpenuhi. 
+
+    if (kondisi) 
+    { 
+    //pernyataan1 dieksekusi 
+    //bila kondisi terpenuhi 
+    } 
+    else 
+    { 
+    //pernyataan2 dieksekusi 
+    //bila kodisi tidak terpenuhi 
+    } 
+kondisi adalah ekspresi JavaScript yang mana hasil evaluasinya memiliki nilai 
+Boolean true atau false 
+Untuk kasus yang melibatkan lebih banyak kondisi, maka kita dapat meletakkan 
+pernyataan if lain setelah else 
+   
+    if (kondisi1) 
+    { 
+    //pernyataan1 dieksekusi 
+    //bila kondisi1 terpenuhi 
+    } 
+    else if (kondisi2) 
+    { 
+    //pernyataan2 dieksekusi 
+    //bila kodisi1 tidak terpenuhi 
+    } 
+    else 
+    { 
+    //pernyataan3 dieksekusi 
+    //bila kodisi2 tidak terpenuhi 
+    } 
+
+2. Percabangan Majemuk, Percabangan majemuk adalah suatu percabangan yang dapat melibatkan lebih dari 1 kondisi di dalam percabangannya. Biasanya percabangan sepert ini menggunakan 
+operator tambahan seperti AND, OR dan sebagainya.
+
+3.  Switch, Selain menggunakan if..else, percabangan juga dapat ditangani dengan perintah 
+switch. Dengn kata lain pernyataan switch digunakan untuk menyederhanakan 
+pernyataan if..else yang terlalu banyak.
+
+*D. Perulangan*
+
+ 1. Perulangan 
+
+Untuk mengulang kejadian beberapa kali maka kita membutuhkan proses perulangan. 
+Pada JavaScript dikenal beberapa metode/cara perulangan. 
+
+2. Perulangan For 
+
+Digunakan untuk mengeksekusi pernyataan-pernyataan beberapa kali. Perulangan For paling sering dipakai, jika anda sudah tahu akhir dari perulangan tersebut. . Perintah for mengulang suatu loop sampai kondisi menghasilkan evaluasi true atau loop keluar dengan perintah break .
+
+Contoh : 
+
+    for (nilai awal;kondisi;penambahan) 
+    { 
+    ulang pernyataan ini; 
+    } 
+
+Contoh dalam program :
+
+    For(x=1;x<=10;x++) 
+    { 
+    document.writeln(”Belajar JavaScript Yuuuuu..”); 
+
+3. Perulangan While 
+Perulangan lain yang dapat digunakan adalah dengan menggunakan perintah While. 
+Perintah while digunakan untuk perulangan yang tidak diketahui berapa kali proses 
+perulangannya. Perintah while terus mengulangi loop selama kondisi memiliki nilai true. Syntax untuk perintah while adalah sebagai berikut :
+
+    while (kondisi) 
+    
+    { 
+    ulang pernyataan ini; 
+
+    }
+
+4. Perulangan Do While
+
+Perulangan ini hampir sama seperti while, digunakan apabila kita belum tahu berapa 
+kali perulangan harus dilakukan. Bedanya pernyataan do..while pengujiannya 
+dilakukan di akhir pernyataan. 
+
+    Do 
+    { 
+    //pernyataan1 dieksekusi 
+    } 
+    while (kondisi);
+
+*E. Kejadian (Event)*
+
+Kejadian (Event) Even adalah sesuatu yang terjadi pada halaman HTML. Berikut ini terdapat beberapa bentuk kejadian yaitu jika pengguna memuat dokumen, pengguna memasukkan data, pengguna mengklik tombol dan sebagainya. Hal-hal tersebut diatur oleh even. Semua kejadian pada Javascript dapat anda tangani dengan menentukan kejadiannya. Biasanya kejadian(even) adalah sebuah fungsi, tetapi pada beberapa kasus, kita dapat menuliskan pernyataan-pernyataannya secara langsung. 
+Berikut ini adalah daftar kejadian(even) pada JavaScript :
+
+![alt text](event.png)
+
+1. Event On Submit
+Event on submit akan dibangkitkan apabila seorang user menekan tombol submit. 
+Dengan event ini data yang diinputkan akan dikirimkan ke tempat lain (email, file 
+teks atau ke dalam suatu tabel).
+
+2.Manipulasi Gambar 
+Untuk memuat suatu image, pada Javascript terdapat objek Image. Untuk membuat
+objek tersebut pendeklarasiannya adalah sebagai berikut : 
+
+    img1 = new Image () 
+    img1.src = "pic1.gif" 
+
+artinya membuat objek image dengan isinya adalah image pic1.gif.
+
+
+*F. Materi DOM*
+
+1. Pengertian Dom
+
+Pengertian DOM
+Pada tingkat paling dasar, situs web terdiri dari dokumen HTML dan CSS. Browser membuat representasi dokumen yang dikenal sebagai Document Object Model (DOM). Dokumen ini memungkinkan Javascript untuk mengakses dan memanipulasi elemen dan style situs web. Model ini dibangun dalam struktur objek dan mendefinisikan:
+
+- Elemen HTML sebagai objek
+- Properties dan event elemen HTML
+- Method untuk mengakses elemen HTML
+
+![alt text](dom.gif)
+
+Elemen-elemen di atas disebut sebagai node. Tidak hanya elemen yang mendapatkan node tetapi atribut elemen dan teks juga mendapatkan node sendiri, yaitu attribute-node dan text-node.
+
+*DOM Document*
+DOM Document adalah keseluruhan objek yang ada di laman web Anda. Jika Anda ingin mengakses objek apa pun di halaman web Anda, Anda harus selalu mulai dengan dokumen tersebut. Karena ada banyak properties dan method penting yang bisa Anda gunakan untuk mengakses dan memodifikasi situs web Anda.
+
+2. Cara Mendapatkan Elemen HTML Mendapatkan elemen dengan ID
+Method getElementById() digunakan untuk mendapatkan elemen tunggal dengan id-nya. Mari kita lihat sebuah contoh:
+
+    var title = document.getElementById(‘header-title’);
+
+Di sini kita mendapatkan elemen dengan id header-title dan menyimpannya ke dalam variabel. Mendapatkan elemen dengan nama kelas Kita juga bisa mendapatkan lebih dari satu objek dengan menggunakan method getElementsByClassName().
+
+    var items = document.getElementsByClassName(‘list-items’);
+
+Di sini kita mendapatkan semua item dengan kelas list-items dan menyimpannya ke dalam variabel.
+
+3. Mendapatkan elemen dengan nama tag
+
+Kita juga bisa mendapatkan elemen kita dengan nama tag menggunakan method getElementsByTagName().
+
+    var listItems = document.getElementsByTagName(‘li’);
+
+Di sini kita mendapatkan semua elemen li dari dokumen HTML kita dan menyimpannya ke dalam variabel.
+
+4.Queryselector
+
+Method querySelector() mengembalikan elemen pertama yang cocok dengan CSS selector yang ditentukan. Itu berarti bahwa Anda bisa mendapatkan elemen dengan id, kelas, tag dan semua CSS selector yang valid. Berikut adalah daftar beberapa opsi yang paling populer.
+
+Get by id:
+
+    var header = document.querySelector(‘#header’)
+
+Get by class:
+
+    var items = document.querySelector(‘.list-items’)
+
+Get by tag:
+
+    var headings = document.querySelector(‘h1’);
+
+5. Mendapatkan elemen yang lebih spesifik:
+
+Kita juga bisa mendapatkan elemen yang lebih spesifik menggunakan CSS Selector.
+
+    document.querySelector(“h1.heading”);
+
+Dalam contoh ini kita mencari tag dan kelas secara bersamaan dan mengembalikan elemen pertama yang melewati CSS Selector.
+
+6. Queryselectorall
+
+Method querySelectorAll() sepenuhnya sama dengan method querySelector() kecuali saat ia mengembalikan semua elemen yang sesuai dengan CSS Selector.
+
+    var heading = document.querySelectorAll(‘h1.heading’);
+
+Dalam contoh ini, kita mendapatkan semua tag h1 yang memiliki kelas heading dan menyimpannya dalam array.
+
+7. Mengubah Elemen HTML
+
+HTML DOM memungkinkan kita mengubah konten dan style elemen HTML dengan mengubah propertinya.
+
+ - Mengubah HTML
+Properti innerHTML dapat digunakan untuk mengubah konten elemen HTML.
+
+     document.getElementById(“#header”).innerHTML = “Hello World!”;
+
+Dalam contoh ini kita mendapatkan elemen dengan id header dan mengatur konten inner menjadi “Hello World!”.
+
+- InnerHTML juga dapat digunakan untuk menempatkan tag di tag lain.
+
+        document.getElementsByTagName("div").innerHTML = "<h1>Hello World!</h1>"
+
+Di sini kita meletakkan tag h1 ke semua div yang sudah ada.
+
+8. Mengubah nilai atribut
+
+Anda juga dapat mengubah nilai atribut menggunakan DOM.
+
+    document.getElementsByTag(“img”).src = “test.jpg”;
+
+Dalam contoh ini kita mengubah src dari semua tag <img/> menjadi test.jpg.
+
+9. Mengubah style
+
+Untuk mengubah style elemen HTML, kita perlu mengubah properti style elemen kita. Berikut ini contoh sintaks untuk mengubah style:
+
+    document.getElementById(id).style.property = new style
+
+Sekarang mari kita lihat contoh di mana kita mendapatkan elemen dan mengubah batas bawah menjadi garis hitam solid:
+
+    document.getElementsByTag(“h1”).style.borderBottom = “solid 3px #000”;
+
+Properti CSS perlu ditulis dalam camelcase bukan nama properti css normal. Dalam contoh ini kita menggunakan borderBottom.
+
+10. Menambah dan menghapus elemen
+
+Sekarang kita akan melihat bagaimana kita dapat menambahkan elemen baru dan menghapus yang sudah ada.
+
+- Menambahkan elemen
+Berikut ini contoh sintaks untuk menambah elemen:
+
+    var div = document.createElement(‘div’);
+
+Di sini kita hanya membuat elemen div menggunakan method createElement() yang mengambil tagname sebagai parameter dan menyimpannya ke dalam variabel. Setelah itu kita hanya perlu memberikan beberapa konten dan kemudian memasukkannya ke dokumen DOM kita.
+
+    var newContent = document.createTextNode("Hello World!");
+    div.appendChild(newContent);
+    document.body.insertBefore(div, currentDiv);
+
+Di sini kita membuat konten menggunakan method createTextNode() yang menggunakan sebuah String sebagai parameter dan kemudian kita memasukkan elemen div baru sebelum div yang sudah ada dalam dokumen kita.
+
+11. Menghapus elemen
+
+Berikut ini contoh sintaks untuk menghapus elemen:
+
+    var elem = document.querySelector('#header');
+    elem.parentNode.removeChild(elem);
+
+Di sini kita mendapatkan elemen dan menghapusnya menggunakan method removeChild().
+
+!2. Mengganti elemen
+
+Berikut ini contoh sintaks untuk mengganti elemen:
+
+    var div = document.querySelector('#div');
+    var newDiv = document.createElement(‘div’);
+    newDiv.innerHTML = "Hello World2"
+    div.parentNode.replaceChild(newDiv, div);
+
+Di sini kita dapat mengganti elemen menggunakan method replaceChild(). Argumen pertama adalah elemen baru dan argumen kedua adalah elemen yang ingin kita ganti.
+
+Menulis langsung ke HTML output stream
+Kita juga dapat menulis ekspresi HTML dan JavaScript langsung ke HTML output streammenggunakan method write().
+
+    document.write(“<h1>Hello World!</h1><p>This is a paragraph!</p>”);
+
+Kita juga dapat meneruskan ekspresi JavaScript seperti objek tanggal.
+
+    document.write(Date());
+
+Method write() juga dapat mengambil beberapa argumen yang akan ditambahkan ke dokumen sesuai dengan kemunculannya.
+
+13.Event Handlers
+
+HTML DOM juga memungkinkan Javascript untuk bereaksi terhadap HTML event. Berikut adalah daftar beberapa yang paling penting:
+
+- mouse click
+- page load
+- mouse move
+- input field change
+- Assign Events
+
+Anda dapat menentukan event secara langsung dalam kode HTML Anda dengan menggunakan atribut pada tag Anda. Berikut adalah contoh event onclick:
+
+    <h1 onclick=”this.innerHTML = ‘Hello!’”>Click me!</h1>
+
+Dalam contoh ini, teks h1 akan berubah menjadi “Halo!” Saat Anda mengklik tombol.
+
+Anda juga dapat memanggil fungsi saat suatu event dipicu seperti yang Anda lihat pada contoh berikut.
+
+    <h1 onclick=”changeText(this)”>Click me!</h1>
+
+Di sini kita memanggil method changeText() ketika tombol diklik dan meneruskan elemen sebagai atribut.
+
+Kita juga dapat menetapkan event yang sama dalam kode Javascript kita.
+
+    document.getElementById(“btn”).onclick = changeText();
+
+14. Assign Events Listeners
+
+Berikut ini contoh sintaks untuk menentukan event listeners ke elemen HTML:
+
+    document.getElementById(“btn”)addEventListener('click', runEvent);
+
+Di sini kita hanya menetapkan clickevent yang memanggil method runEvent ketika elemen ‘btn’ Anda diklik.
+
+Anda juga dapat menetapkan beberapa event ke satu elemen:
+
+    document.getElementById(“btn”)addEventListener('mouseover', runEvent);
+
+15. Node Relationships
+
+Node dalam DOM Document memiliki hubungan hierarki satu dengan yang lain, terstruktur seperti pohon. Di sini kita menggunakan istilah parent, sibling, dan child untuk menggambarkan hubungan antar node.
+
+Node paling atas disebut root dan merupakan satu-satunya node yang tidak memiliki parent. Root dalam dokumen HTML normal adalah tag <html /> karena tidak memiliki parent dan merupakan tag teratas di dokumen.
+
+Menavigasi Antar Node
+Kita dapat menavigasi antar node menggunakan properti berikut ini:
+
+- parentNode
+- childNodes
+- firstChild
+- lastChild
+- nextSibling
+
+Berikut adalah contoh bagaimana Anda bisa mendapatkan elemen parent dari h1.
+
+    var parent = document.getElementById(“heading”).parentNode
+    <SCRIPT LANGUAGE=”Javascript”>
