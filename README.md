@@ -221,10 +221,6 @@ Contoh Program Javascript
     </BODY>     
     </HTML
 
-Output yang di tampikan :
-#
-![alt text](string.png)
-#
 2.7 Memasukkan Data
 
 Untuk memasukkan data dari keyboard dapat dilakukan dengan menggunakan 
@@ -262,10 +258,7 @@ Contoh Program JavaScript
     </BODY> 
     </HTML>
 
-Output yang di tampilkan :
-#
-![alt text](memasukkan_data.png)
-#
+
 *B. Objek Javascript*
 
 Objek Untuk memasukkan Data 
@@ -297,16 +290,7 @@ Contoh pendeklarasian Objek String :
 Length adalah property yang sering digunakan dalam objek string yang digunakan 
 Untuk mengetahui banyaknya karakter dalam suatu string.  Objek String juga memiliki method yang dapat digunakan untuk memanipulasi string tersebut. Adapun Method yang dapat digunakan meliputi : 
 
-![alt text](string2.png)
-
 7. Objek Document, objek ini digunakan untuk mengakses informasi mengenai dokumen HTML, tampilan output dan memanipulasinya. 
-Property dari objek document meliputi :
-
-![alt text](objekdocument.png)
-
-Method dari objek document meliputi : 
-
-![alt text](objekdocument2.png)
 
 *C. Percabangan*
 
@@ -411,8 +395,6 @@ dilakukan di akhir pernyataan.
 Kejadian (Event) Even adalah sesuatu yang terjadi pada halaman HTML. Berikut ini terdapat beberapa bentuk kejadian yaitu jika pengguna memuat dokumen, pengguna memasukkan data, pengguna mengklik tombol dan sebagainya. Hal-hal tersebut diatur oleh even. Semua kejadian pada Javascript dapat anda tangani dengan menentukan kejadiannya. Biasanya kejadian(even) adalah sebuah fungsi, tetapi pada beberapa kasus, kita dapat menuliskan pernyataan-pernyataannya secara langsung. 
 Berikut ini adalah daftar kejadian(even) pada JavaScript :
 
-![alt text](event.png)
-
 1. Event On Submit
 Event on submit akan dibangkitkan apabila seorang user menekan tombol submit. 
 Dengan event ini data yang diinputkan akan dikirimkan ke tempat lain (email, file 
@@ -438,8 +420,6 @@ Pada tingkat paling dasar, situs web terdiri dari dokumen HTML dan CSS. Browser 
 - Elemen HTML sebagai objek
 - Properties dan event elemen HTML
 - Method untuk mengakses elemen HTML
-
-![alt text](dom.gif)
 
 Elemen-elemen di atas disebut sebagai node. Tidak hanya elemen yang mendapatkan node tetapi atribut elemen dan teks juga mendapatkan node sendiri, yaitu attribute-node dan text-node.
 
